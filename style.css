@@ -1,0 +1,161 @@
+body{
+    overflow: hidden;
+}
+
+.row{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url("starringNight.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.col-6{
+    display: flex;
+    justify-content: center;
+    height: 180px;
+}
+
+.contenitoreButton{
+    height: 150px;
+    width: 100px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px #0c0c0c;
+    border-radius: 5px;
+   
+}
+
+.antenna{
+    height: 120px;
+    width: 8px;
+    background-color: rgb(52, 51, 51);
+    position: relative;
+    bottom: 80px;
+    border-bottom-left-radius: 50px;
+    box-shadow: inset 0 0 10px #b0b0b0;
+
+}
+
+.ball{
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+    bottom: 90px;
+    right: -13.5px;
+    z-index: 2;
+    box-shadow: inset 4px 3px  #2e2e2e;
+
+
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 2px solid darkred;
+    border-radius: 50%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.607);
+    cursor: pointer;
+}
+
+.greenBtn{
+    background-color: greenyellow;
+    border: 2px solid green;
+}
+
+.rocket{
+    width: 200px;
+}
+
+
+.animazione{
+    animation-name: animazione;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+    animation-fill-mode:forwards;
+}
+
+@keyframes animazione{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    70%{
+        transform: translateY(-400px);
+
+    }
+
+    100%{
+        transform: translateY(-500px) rotate(180deg) translateX(-100px);
+    }
+}
+
+
+
+.animazione2{
+    animation-name: animazione2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes animazione2{
+
+    0%{
+        transform: translateY(-500px) rotate(-180deg) translateX(-100px) ;
+    }
+
+    20%{
+        transform: rotate(-180deg) translateX(-100px) translateY(400px) ;
+    }
+
+    80%{
+         transform: translateY(0px) translateX(100px) rotate(-180deg);
+    }
+
+}
+
+.saetta1{
+    height: 20px;
+    width: 3px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    bottom: 110px;
+    transform: rotate(-20deg);
+    right: -15px;
+}
+
+.saetta2{
+    height: 30px;
+    width: 3px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    bottom: 135px;
+    right: -22px;
+    transform: rotate(-4deg);
+}
+
+.saetta3{
+    height: 20px;
+    width: 3px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    bottom: 120px;
+    transform: rotate(20deg);
+    right: -35px;
+}
+
